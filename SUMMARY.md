@@ -1,5 +1,4 @@
 # Table of contents
 
-* [DeepWalk](README.md)
-* [Untitled](untitled.md)
+* [DeepWalking on Dynamic Graphs](README.md)
 
