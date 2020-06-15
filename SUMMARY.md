@@ -1,4 +1,5 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [DeepWalk](README.md)
+* [Untitled](untitled.md)
 
