@@ -5,5 +5,5 @@ This hosts descriptions of the various machine learning projects that I have don
 * [Classifying Calendar Events](classifying-calendar-events.md)
 * [DeepWalking on Dynamic Graphs](deepwalking-on-dynamic-graphs.md)
 
-`Return to Portfolio`
+\`\`[`Return to Portfolio`](http://joshua.pl)\`\`
 
