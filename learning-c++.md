@@ -93,3 +93,5 @@ char z, x = 'x';
 
 Where variables are defined without an initial value, they take the value NULL with all bytes set to 0.
 
+We have two kinds of expressions in C++, lvalues and rvalues. **lvalues** are expressions that refer to a memory location and can appear either on **the left or right of an assignment**. **rvalues** on the other hand refer to data values that are stored in some address in memory and can appear **only to the right of an assignment**, since they cannot be assigned a value.
+
