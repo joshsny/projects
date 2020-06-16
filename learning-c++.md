@@ -172,5 +172,33 @@ const int LENGTH = 10;
 
 ### Storage Classes
 
+A storage class defines the scope and life-time of variables and functions. The storage class precedes the type that they modify.
 
+{% tabs %}
+{% tab title="auto" %}
+This is the default storage class for all local variables and it can only be used to define local variables i.e within functions. Therefore `int x` is the same as `auto int x` when used inside a function.
+{% endtab %}
+
+{% tab title="register" %}
+The register storage class is used to define local variables that should be stored in a register instead of RAM. Therefore, the variable size has a maximum size that is equal to the register size \(usually one word\) and it cannot have the unary operator '&'.
+
+This should only be used for variables that require quick access such as counters for a loop.
+
+{% hint style="warning" %}
+Defining the storage class as register does not mean that the variable will be stored in a register, but that it might be, if hardware implentation allows it.
+{% endhint %}
+{% endtab %}
+
+{% tab title="static" %}
+
+{% endtab %}
+
+{% tab title="extern" %}
+
+{% endtab %}
+
+{% tab title="mutable" %}
+
+{% endtab %}
+{% endtabs %}
 
