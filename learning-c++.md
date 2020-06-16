@@ -19,7 +19,18 @@ There are some important things to clear up before I start writing my first C++ 
 
 As always, my first C++ program is just Hello World.
 
-```text
+```cpp
+#include <iostream>
 
+using namespace std;
+
+// Begin program execution
+int main() {
+    cout << "Hello World";
+
+    return 0;
+}
 ```
+
+The main things to notice are that C++ uses a `;` to terminate statements, it encloses function code in `{}` and it requires declaring a variable type at the time of variable declaration.
 
