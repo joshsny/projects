@@ -52,5 +52,5 @@ C++ contains a number of primitive data types that are as follows:
 | Valueless | void |
 | Wide Character | wchar\_t |
 
-These primitive data types can be modified using the prefixes signed, unsigned, short or long.
+These primitive data types can be modified using the prefixes signed, unsigned, short or long to make other data types.
 
