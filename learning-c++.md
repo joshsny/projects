@@ -32,5 +32,25 @@ int main() {
 }
 ```
 
-The main things to notice are that C++ uses a `;` to terminate statements, it encloses function code in `{}` and it requires declaring a variable type at the time of variable declaration.
+The main things to notice are that C++ uses a `;` to terminate statements, it encloses function code in `{}` which represent blocks and it requires declaring a variable type at the time of variable declaration.
+
+{% hint style="warning" %}
+C++ is case sensitive and identifiers \(of variables, functions etc.\) must start with a letter or an underscore and can contain any number of subsequent letters, underscores or numbers. Like other languages, C++ has some reserved keywords that cannot be used as names, these can be found [here](https://www.tutorialspoint.com/cplusplus/cpp_basic_syntax.htm).
+{% endhint %}
+
+### Data Types
+
+C++ contains a number of primitive data types that are as follows:
+
+| Type | Keyword |
+| :---: | :---: |
+| Boolean | bool |
+| Character | char |
+| Integer | int |
+| Floating Point | float |
+| Double Floating Point | double |
+| Valueless | void |
+| Wide Character | wchar\_t |
+
+These primitive data types can be modified using the prefixes signed, unsigned, short or long.
 
