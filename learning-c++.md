@@ -95,3 +95,15 @@ Where variables are defined without an initial value, they take the value NULL w
 
 We have two kinds of expressions in C++, lvalues and rvalues. **lvalues** are expressions that refer to a memory location and can appear either on **the left or right of an assignment**. **rvalues** on the other hand refer to data values that are stored in some address in memory and can appear **only to the right of an assignment**, since they cannot be assigned a value.
 
+### Variable Scope
+
+The scope of a variable is the region of the program where that variable exists. Variables can be declared within a function, in which case it is a local variable. Alternatively, if it is declared outside of a function it is called a global variable. If it is declared in the definition of a function, then it is called a formal parameter.
+
+When a local variable is definied it is not initialised by the system and so it must be initialised by the author. Global variables are initialised to their default values, however it is good to initialise variables properly to avoid unexpected results.
+
+For more information regarding local and global variables, visit [here](https://www.tutorialspoint.com/cplusplus/cpp_variable_scope.htm).
+
+### Constants/Literals
+
+Constants are fixed values that the program may not alter. They are called literals, they _literally_ are their assigned value.
+
