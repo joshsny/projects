@@ -163,9 +163,14 @@ World" \\ Represents same string as above
 {% endtab %}
 {% endtabs %}
 
-Constants can be defined in two ways, using the const variable type or the \#define preprocessor.
+Constants can be defined in two ways, using the const variable type or the \#define preprocessor. It is good practice to use all capitals for constant variables.
 
 ```cpp
-
+#define LENGTH 10;
+const int LENGTH = 10;
 ```
+
+### Storage Classes
+
+
 
