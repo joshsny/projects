@@ -6,6 +6,10 @@ description: A documentation of my learning journey of C++
 
 I have decided, during this period of lockdown due to COVID-19, to learn some C++. Being a maths graduate, I usually tampered with high-end languages and didn't go any lower than something like PHP. This is a shame, since learning middle or lower level languages can improve understanding of lower level concepts that are important, such as memory allocation. C++ is a middle level language and a good place for me to start.
 
+{% hint style="info" %}
+This is not a tutorial for C++ but simply an account of my learning.
+{% endhint %}
+
 ### Basic Notions
 
 There are some important things to clear up before I start writing my first C++ program. Here are the distinctions between Objects, Classes, Methods and Instance Variables.
@@ -52,5 +56,27 @@ C++ contains a number of primitive data types that are as follows:
 | Valueless | void |
 | Wide Character | wchar\_t |
 
-These primitive data types can be modified using the prefixes signed, unsigned, short or long to make other data types.
+These primitive data types can be modified using the prefixes signed, unsigned, short or long to make other data types. These do as they say, unsigned makes a number non-negative and long/short changes the length of a number.
+
+The size of a data type can be determined using the `sizeof()` function applied to a data type.
+
+#### Creating New Data Types
+
+New data types can be created using `typedef type name`. For example, to define a new type called whale we can use the following code:
+
+```cpp
+typedef string whale;
+whale Betty "My name is Betty and I am a whale";
+```
+
+Which defines a whale named Betty with the given string value.
+
+Enumeration data types can also be created using the `enum` keyword:
+
+```cpp
+enum whale {small, medium, large = 3} w;
+w = medium;
+```
+
+Here the value of the first name is 0, the second 1, etc. Though we can assign specific values to a name, like we have with `large = 3`
 
