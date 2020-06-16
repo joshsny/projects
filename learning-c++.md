@@ -7,7 +7,7 @@ description: A documentation of my learning journey of C++
 I have decided, during this period of lockdown due to COVID-19, to learn some C++. Being a maths graduate, I usually tampered with high-end languages and didn't go any lower than something like PHP. This is a shame, since learning middle or lower level languages can improve understanding of lower level concepts that are important, such as memory allocation. C++ is a middle level language and a good place for me to start.
 
 {% hint style="info" %}
-This is not a tutorial for C++ but simply an account of my learning.
+This is not a tutorial for C++ but simply an account of my learning. I used the tutorial from Tutorialspoint available [here](https://www.tutorialspoint.com/cplusplus/) to learn C++ and what is written here, either comes from, or is motivated by, this tutorial.
 {% endhint %}
 
 ### Basic Notions
@@ -78,5 +78,18 @@ enum whale {small, medium, large = 3} w;
 w = medium;
 ```
 
-Here the value of the first name is 0, the second 1, etc. Though we can assign specific values to a name, like we have with `large = 3`
+Here the value of the first name is 0, the second 1, etc. Though we can assign specific values to a name, like we have with `large = 3`.
+
+### Variable Types
+
+The basic variable types are, unsuprisingy, the same as those for the data types. We define variables by indicating their type followed by their name. Multiple variables can be instantiated at the same time and a value may or may not be asigned. For example:
+
+```cpp
+int a = 3;
+float a,b,c;
+char z, x = 'x';
+
+```
+
+Where variables are defined without an initial value, they take the value NULL with all bytes set to 0.
 
