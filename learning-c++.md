@@ -107,3 +107,65 @@ For more information regarding local and global variables, visit [here](https://
 
 Constants are fixed values that the program may not alter. They are called literals, they _literally_ are their assigned value.
 
+{% tabs %}
+{% tab title="Integers" %}
+An integer literal can be a decimal, octal or hexidecimal constant. Prefixes specify the base of the constant: 0x for Hexidecimal, 0 for octal and nothing for decimal. A suffix that is a combination of U and L can be used to declare that the constant is unsigned and/or long. These suffixes can be uppercase or lowercase and in any order. For example:
+
+```cpp
+10 \\ Legal
+0xFeeL \\ Legal
+078 \\ Illegal, 8 is not an octal digit
+37uu \\ Illegal, since suffixes cannot be repeated
+```
+{% endtab %}
+
+{% tab title="Floating Points" %}
+A floating point literal has an integer part, a decimal point, a fractional oart and an exponent part. To use decimal form, the decimal point or exponent must be included. For Example:
+
+```cpp
+3.1415926535 \\ Legal
+3.14e-5 \\ Legal
+.e1 \\ Illegal, no integer or fractional part
+5e \\ Illegal, no exponent given
+
+```
+{% endtab %}
+
+{% tab title="Booleans" %}
+Booleans take two values: `true` or `false`. That's it!
+{% endtab %}
+
+{% tab title="Characters" %}
+Character literals are enlcosed in **single** quotes. If it begins with L then it is a wide character literal and should be stored in the **wchar\_t** variable type. Otherwise it is stored in the normal **char** type.
+
+\ is used as an escape sequence and allows to represent specific characters, some popular ones are:
+
+| Escape Sequence | Meaning |
+| :---: | :---: |
+| \n | New Line |
+| \t | Horizontal Tab |
+| \v | Vetical Tab |
+| \r | Return |
+| \b | Backspace |
+| \' or \" or \\ or \? | Escaped Character |
+{% endtab %}
+
+{% tab title="Strings" %}
+String literals are enclosed in **double** quotes, distinguishing them from characters. A string is made up of characters and includes the escape sequences that characters use. For example:
+
+```cpp
+"h" \\ String containing the character h
+"Hello World"
+"Hello \
+World" \\ Represents same string as above
+"Hell" "o" " World" \\ Also the same string
+```
+{% endtab %}
+{% endtabs %}
+
+Constants can be defined in two ways, using the const variable type or the \#define preprocessor.
+
+```cpp
+
+```
+
