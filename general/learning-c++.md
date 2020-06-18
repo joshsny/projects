@@ -255,7 +255,7 @@ There are a number of miscallaneous operators that are supported by C++
 
 For information regarding operator preference, please see [here](https://www.tutorialspoint.com/cplusplus/cpp_operators.htm).
 
-### Loops
+### Loop Types
 
 C++ supports the usual loops. The syntax for implentation is below.
 
@@ -276,4 +276,29 @@ for ( init; condition; increment) {
     statement(s);
 }
 ```
+
+#### do...while Loop
+
+A do...while loop is exactly the same as a while loop, except that the condition is checked at the end of the loop rather than at the start. This means that the loop is always garunteed to execute at least once.
+
+```cpp
+do {
+    statement(s);
+}
+while( condition );
+```
+
+### Loop Controls
+
+Loop controls are for changing loop behaviour in the middle of it's course of life. They are:
+
+* `break` - terminates the loop or switch statement and transfers the execution to the statement immediately following the loop
+* `continue` - Skips the remainder of the loop body and immediately retests the condition
+* `goto` - transfers control to the labelled statement. **Not reccomended**.
+
+{% hint style="info" %}
+In some cases an infinite loop is desired. In this case, common practice is to use a for loop with an empty statement `( ; ; )`. The presence of an empty condition means that it is assumed to be true.
+{% endhint %}
+
+### Decision Making using C++
 
